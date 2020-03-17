@@ -43,10 +43,10 @@ RM = /Applications/CLion.app/Contents/bin/cmake/mac/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/liqi/Desktop/httpserver
+CMAKE_SOURCE_DIR = /Users/liqi/Desktop/Http_Server_Client/httpserver
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/liqi/Desktop/httpserver/cmake-build-debug
+CMAKE_BINARY_DIR = /Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug
 
 # Include any dependencies generated for this target.
 include CMakeFiles/httpserver.dir/depend.make
@@ -59,107 +59,107 @@ include CMakeFiles/httpserver.dir/flags.make
 
 CMakeFiles/httpserver.dir/main.cpp.o: CMakeFiles/httpserver.dir/flags.make
 CMakeFiles/httpserver.dir/main.cpp.o: ../main.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/httpserver.dir/main.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/main.cpp.o -c /Users/liqi/Desktop/httpserver/main.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/httpserver.dir/main.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/main.cpp.o -c /Users/liqi/Desktop/Http_Server_Client/httpserver/main.cpp
 
 CMakeFiles/httpserver.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpserver.dir/main.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/httpserver/main.cpp > CMakeFiles/httpserver.dir/main.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/Http_Server_Client/httpserver/main.cpp > CMakeFiles/httpserver.dir/main.cpp.i
 
 CMakeFiles/httpserver.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpserver.dir/main.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/httpserver/main.cpp -o CMakeFiles/httpserver.dir/main.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/Http_Server_Client/httpserver/main.cpp -o CMakeFiles/httpserver.dir/main.cpp.s
 
 CMakeFiles/httpserver.dir/connection.cpp.o: CMakeFiles/httpserver.dir/flags.make
 CMakeFiles/httpserver.dir/connection.cpp.o: ../connection.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/httpserver.dir/connection.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/connection.cpp.o -c /Users/liqi/Desktop/httpserver/connection.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/httpserver.dir/connection.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/connection.cpp.o -c /Users/liqi/Desktop/Http_Server_Client/httpserver/connection.cpp
 
 CMakeFiles/httpserver.dir/connection.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpserver.dir/connection.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/httpserver/connection.cpp > CMakeFiles/httpserver.dir/connection.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/Http_Server_Client/httpserver/connection.cpp > CMakeFiles/httpserver.dir/connection.cpp.i
 
 CMakeFiles/httpserver.dir/connection.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpserver.dir/connection.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/httpserver/connection.cpp -o CMakeFiles/httpserver.dir/connection.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/Http_Server_Client/httpserver/connection.cpp -o CMakeFiles/httpserver.dir/connection.cpp.s
 
 CMakeFiles/httpserver.dir/connection_manager.cpp.o: CMakeFiles/httpserver.dir/flags.make
 CMakeFiles/httpserver.dir/connection_manager.cpp.o: ../connection_manager.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/httpserver.dir/connection_manager.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/connection_manager.cpp.o -c /Users/liqi/Desktop/httpserver/connection_manager.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/httpserver.dir/connection_manager.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/connection_manager.cpp.o -c /Users/liqi/Desktop/Http_Server_Client/httpserver/connection_manager.cpp
 
 CMakeFiles/httpserver.dir/connection_manager.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpserver.dir/connection_manager.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/httpserver/connection_manager.cpp > CMakeFiles/httpserver.dir/connection_manager.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/Http_Server_Client/httpserver/connection_manager.cpp > CMakeFiles/httpserver.dir/connection_manager.cpp.i
 
 CMakeFiles/httpserver.dir/connection_manager.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpserver.dir/connection_manager.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/httpserver/connection_manager.cpp -o CMakeFiles/httpserver.dir/connection_manager.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/Http_Server_Client/httpserver/connection_manager.cpp -o CMakeFiles/httpserver.dir/connection_manager.cpp.s
 
 CMakeFiles/httpserver.dir/mime_types.cpp.o: CMakeFiles/httpserver.dir/flags.make
 CMakeFiles/httpserver.dir/mime_types.cpp.o: ../mime_types.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/httpserver.dir/mime_types.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/mime_types.cpp.o -c /Users/liqi/Desktop/httpserver/mime_types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/httpserver.dir/mime_types.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/mime_types.cpp.o -c /Users/liqi/Desktop/Http_Server_Client/httpserver/mime_types.cpp
 
 CMakeFiles/httpserver.dir/mime_types.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpserver.dir/mime_types.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/httpserver/mime_types.cpp > CMakeFiles/httpserver.dir/mime_types.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/Http_Server_Client/httpserver/mime_types.cpp > CMakeFiles/httpserver.dir/mime_types.cpp.i
 
 CMakeFiles/httpserver.dir/mime_types.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpserver.dir/mime_types.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/httpserver/mime_types.cpp -o CMakeFiles/httpserver.dir/mime_types.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/Http_Server_Client/httpserver/mime_types.cpp -o CMakeFiles/httpserver.dir/mime_types.cpp.s
 
 CMakeFiles/httpserver.dir/reply.cpp.o: CMakeFiles/httpserver.dir/flags.make
 CMakeFiles/httpserver.dir/reply.cpp.o: ../reply.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/httpserver.dir/reply.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/reply.cpp.o -c /Users/liqi/Desktop/httpserver/reply.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/httpserver.dir/reply.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/reply.cpp.o -c /Users/liqi/Desktop/Http_Server_Client/httpserver/reply.cpp
 
 CMakeFiles/httpserver.dir/reply.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpserver.dir/reply.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/httpserver/reply.cpp > CMakeFiles/httpserver.dir/reply.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/Http_Server_Client/httpserver/reply.cpp > CMakeFiles/httpserver.dir/reply.cpp.i
 
 CMakeFiles/httpserver.dir/reply.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpserver.dir/reply.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/httpserver/reply.cpp -o CMakeFiles/httpserver.dir/reply.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/Http_Server_Client/httpserver/reply.cpp -o CMakeFiles/httpserver.dir/reply.cpp.s
 
 CMakeFiles/httpserver.dir/request_handler.cpp.o: CMakeFiles/httpserver.dir/flags.make
 CMakeFiles/httpserver.dir/request_handler.cpp.o: ../request_handler.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/httpserver.dir/request_handler.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/request_handler.cpp.o -c /Users/liqi/Desktop/httpserver/request_handler.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/httpserver.dir/request_handler.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/request_handler.cpp.o -c /Users/liqi/Desktop/Http_Server_Client/httpserver/request_handler.cpp
 
 CMakeFiles/httpserver.dir/request_handler.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpserver.dir/request_handler.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/httpserver/request_handler.cpp > CMakeFiles/httpserver.dir/request_handler.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/Http_Server_Client/httpserver/request_handler.cpp > CMakeFiles/httpserver.dir/request_handler.cpp.i
 
 CMakeFiles/httpserver.dir/request_handler.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpserver.dir/request_handler.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/httpserver/request_handler.cpp -o CMakeFiles/httpserver.dir/request_handler.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/Http_Server_Client/httpserver/request_handler.cpp -o CMakeFiles/httpserver.dir/request_handler.cpp.s
 
 CMakeFiles/httpserver.dir/request_parser.cpp.o: CMakeFiles/httpserver.dir/flags.make
 CMakeFiles/httpserver.dir/request_parser.cpp.o: ../request_parser.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/httpserver.dir/request_parser.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/request_parser.cpp.o -c /Users/liqi/Desktop/httpserver/request_parser.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/httpserver.dir/request_parser.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/request_parser.cpp.o -c /Users/liqi/Desktop/Http_Server_Client/httpserver/request_parser.cpp
 
 CMakeFiles/httpserver.dir/request_parser.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpserver.dir/request_parser.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/httpserver/request_parser.cpp > CMakeFiles/httpserver.dir/request_parser.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/Http_Server_Client/httpserver/request_parser.cpp > CMakeFiles/httpserver.dir/request_parser.cpp.i
 
 CMakeFiles/httpserver.dir/request_parser.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpserver.dir/request_parser.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/httpserver/request_parser.cpp -o CMakeFiles/httpserver.dir/request_parser.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/Http_Server_Client/httpserver/request_parser.cpp -o CMakeFiles/httpserver.dir/request_parser.cpp.s
 
 CMakeFiles/httpserver.dir/server.cpp.o: CMakeFiles/httpserver.dir/flags.make
 CMakeFiles/httpserver.dir/server.cpp.o: ../server.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/httpserver.dir/server.cpp.o"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/server.cpp.o -c /Users/liqi/Desktop/httpserver/server.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/httpserver.dir/server.cpp.o"
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/httpserver.dir/server.cpp.o -c /Users/liqi/Desktop/Http_Server_Client/httpserver/server.cpp
 
 CMakeFiles/httpserver.dir/server.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/httpserver.dir/server.cpp.i"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/httpserver/server.cpp > CMakeFiles/httpserver.dir/server.cpp.i
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/liqi/Desktop/Http_Server_Client/httpserver/server.cpp > CMakeFiles/httpserver.dir/server.cpp.i
 
 CMakeFiles/httpserver.dir/server.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/httpserver.dir/server.cpp.s"
-	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/httpserver/server.cpp -o CMakeFiles/httpserver.dir/server.cpp.s
+	/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/liqi/Desktop/Http_Server_Client/httpserver/server.cpp -o CMakeFiles/httpserver.dir/server.cpp.s
 
 # Object files for target httpserver
 httpserver_OBJECTS = \
@@ -185,7 +185,7 @@ httpserver: CMakeFiles/httpserver.dir/request_parser.cpp.o
 httpserver: CMakeFiles/httpserver.dir/server.cpp.o
 httpserver: CMakeFiles/httpserver.dir/build.make
 httpserver: CMakeFiles/httpserver.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable httpserver"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Linking CXX executable httpserver"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/httpserver.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -198,6 +198,6 @@ CMakeFiles/httpserver.dir/clean:
 .PHONY : CMakeFiles/httpserver.dir/clean
 
 CMakeFiles/httpserver.dir/depend:
-	cd /Users/liqi/Desktop/httpserver/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/liqi/Desktop/httpserver /Users/liqi/Desktop/httpserver /Users/liqi/Desktop/httpserver/cmake-build-debug /Users/liqi/Desktop/httpserver/cmake-build-debug /Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/DependInfo.cmake --color=$(COLOR)
+	cd /Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /Users/liqi/Desktop/Http_Server_Client/httpserver /Users/liqi/Desktop/Http_Server_Client/httpserver /Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug /Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug /Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/httpserver.dir/depend
 

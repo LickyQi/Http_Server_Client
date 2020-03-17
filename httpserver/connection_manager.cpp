@@ -19,8 +19,8 @@ namespace http {
 
         void connection_manager::start(connection_ptr c)
         {
-            connections_.insert(c);
-            c->start();
+            connections_.insert(c); //connections_为保存connection的shared_ptr set
+            c->start(); //调用connection的start开始读取网络套接字数据
         }
 
         void connection_manager::stop(connection_ptr c)

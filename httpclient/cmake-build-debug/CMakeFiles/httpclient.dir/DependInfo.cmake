@@ -4,7 +4,7 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/liqi/Desktop/httpclient/main.cpp" "/Users/liqi/Desktop/httpclient/cmake-build-debug/CMakeFiles/httpclient.dir/main.cpp.o"
+  "/Users/liqi/Desktop/Http_Server_Client/httpclient/main.cpp" "/Users/liqi/Desktop/Http_Server_Client/httpclient/cmake-build-debug/CMakeFiles/httpclient.dir/main.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

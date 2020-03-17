@@ -102,7 +102,9 @@ namespace http {
         std::vector<boost::asio::const_buffer> reply::to_buffers()
         {
             std::vector<boost::asio::const_buffer> buffers;
+            //创建响应行
             buffers.push_back(status_strings::to_buffer(status));
+            //创建响应头
             for (std::size_t i = 0; i < headers.size(); ++i)
             {
                 header& h = headers[i];

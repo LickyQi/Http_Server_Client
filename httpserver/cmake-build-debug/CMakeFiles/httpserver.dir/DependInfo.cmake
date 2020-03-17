@@ -4,14 +4,14 @@ set(CMAKE_DEPENDS_LANGUAGES
   )
 # The set of files for implicit dependencies of each language:
 set(CMAKE_DEPENDS_CHECK_CXX
-  "/Users/liqi/Desktop/httpserver/connection.cpp" "/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/connection.cpp.o"
-  "/Users/liqi/Desktop/httpserver/connection_manager.cpp" "/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/connection_manager.cpp.o"
-  "/Users/liqi/Desktop/httpserver/main.cpp" "/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/main.cpp.o"
-  "/Users/liqi/Desktop/httpserver/mime_types.cpp" "/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/mime_types.cpp.o"
-  "/Users/liqi/Desktop/httpserver/reply.cpp" "/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/reply.cpp.o"
-  "/Users/liqi/Desktop/httpserver/request_handler.cpp" "/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/request_handler.cpp.o"
-  "/Users/liqi/Desktop/httpserver/request_parser.cpp" "/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/request_parser.cpp.o"
-  "/Users/liqi/Desktop/httpserver/server.cpp" "/Users/liqi/Desktop/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/server.cpp.o"
+  "/Users/liqi/Desktop/Http_Server_Client/httpserver/connection.cpp" "/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/connection.cpp.o"
+  "/Users/liqi/Desktop/Http_Server_Client/httpserver/connection_manager.cpp" "/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/connection_manager.cpp.o"
+  "/Users/liqi/Desktop/Http_Server_Client/httpserver/main.cpp" "/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/main.cpp.o"
+  "/Users/liqi/Desktop/Http_Server_Client/httpserver/mime_types.cpp" "/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/mime_types.cpp.o"
+  "/Users/liqi/Desktop/Http_Server_Client/httpserver/reply.cpp" "/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/reply.cpp.o"
+  "/Users/liqi/Desktop/Http_Server_Client/httpserver/request_handler.cpp" "/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/request_handler.cpp.o"
+  "/Users/liqi/Desktop/Http_Server_Client/httpserver/request_parser.cpp" "/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/request_parser.cpp.o"
+  "/Users/liqi/Desktop/Http_Server_Client/httpserver/server.cpp" "/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/server.cpp.o"
   )
 set(CMAKE_CXX_COMPILER_ID "AppleClang")
 

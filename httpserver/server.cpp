@@ -21,7 +21,7 @@ namespace http {
                   signals_(io_context_),
                   acceptor_(io_context_),
                   connection_manager_(),
-                  request_handler_(doc_root)
+                  request_handler_(doc_root)//处理请求的类
         {
             // Register to handle the signals that indicate when the server should exit.
             // It is safe to register for the same signal multiple times in a program,
@@ -43,7 +43,7 @@ namespace http {
             acceptor_.bind(endpoint);
             acceptor_.listen();
 
-            do_accept();
+            do_accept();//等待连接
         }
 
         void server::run()
@@ -55,7 +55,7 @@ namespace http {
             io_context_.run();
         }
 
-        void server::do_accept()
+        void server::do_accept() //异步接收连接
         {
             acceptor_.async_accept(
                     [this](boost::system::error_code ec, boost::asio::ip::tcp::socket socket)
@@ -69,6 +69,7 @@ namespace http {
 
                         if (!ec)
                         {
+                            //connection表示一个连接
                             connection_manager_.start(std::make_shared<connection>(
                                     std::move(socket), connection_manager_, request_handler_));
                         }

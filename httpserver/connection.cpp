@@ -27,7 +27,7 @@ namespace http {
 
         void connection::start()
         {
-            do_read();
+            do_read(); //异步读取数据
         }
 
         void connection::stop()
@@ -41,24 +41,29 @@ namespace http {
             socket_.async_read_some(boost::asio::buffer(buffer_),
                                     [this, self](boost::system::error_code ec, std::size_t bytes_transferred)
                                     {
+                                        //完成回调，收到数据后要开始解析HTTP请求
                                         if (!ec)
                                         {
                                             request_parser::result_type result;
                                             std::tie(result, std::ignore) = request_parser_.parse(
                                                     request_, buffer_.data(), buffer_.data() + bytes_transferred);
 
+                                            //这里参数需要两个迭代器，表示流的开始和结束
                                             if (result == request_parser::good)
+                                                //解析请求成功
                                             {
                                                 request_handler_.handle_request(request_, reply_);
                                                 do_write();
                                             }
                                             else if (result == request_parser::bad)
+                                                //解析请求失败
                                             {
                                                 reply_ = reply::stock_reply(reply::bad_request);
                                                 do_write();
                                             }
                                             else
                                             {
+                                                //继续异步读取消息
                                                 do_read();
                                             }
                                         }

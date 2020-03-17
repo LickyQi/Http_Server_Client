@@ -8,38 +8,38 @@
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/Users/liqi/Desktop/httpserver/cmake-build-debug"/>
+				<Option working_dir="/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/Users/liqi/Desktop/httpserver/cmake-build-debug"/>
+				<Option working_dir="/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/Users/liqi/Desktop/httpserver/cmake-build-debug"/>
+				<Option working_dir="/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="httpserver">
-				<Option output="/Users/liqi/Desktop/httpserver/cmake-build-debug/httpserver" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/liqi/Desktop/httpserver/cmake-build-debug"/>
+				<Option output="/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/httpserver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -53,15 +53,15 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 httpserver"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 httpserver"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="httpserver/fast">
-				<Option output="/Users/liqi/Desktop/httpserver/cmake-build-debug/httpserver" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/Users/liqi/Desktop/httpserver/cmake-build-debug"/>
+				<Option output="/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/httpserver" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
 				<Option compiler="gcc"/>
@@ -75,65 +75,65 @@
 					<Add directory="/Library/Frameworks"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 httpserver/fast"/>
-					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 httpserver/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/Users/liqi/Desktop/Http_Server_Client/httpserver/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/Users/liqi/Desktop/httpserver/connection.cpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/connection.cpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/connection.hpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/connection.hpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/connection_manager.cpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/connection_manager.cpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/connection_manager.hpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/connection_manager.hpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/header.hpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/header.hpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/main.cpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/main.cpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/mime_types.cpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/mime_types.cpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/mime_types.hpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/mime_types.hpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/reply.cpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/reply.cpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/reply.hpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/reply.hpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/request.hpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/request.hpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/request_handler.cpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/request_handler.cpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/request_handler.hpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/request_handler.hpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/request_parser.cpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/request_parser.cpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/request_parser.hpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/request_parser.hpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/server.cpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/server.cpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/server.hpp">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/server.hpp">
 			<Option target="httpserver"/>
 		</Unit>
-		<Unit filename="/Users/liqi/Desktop/httpserver/CMakeLists.txt">
+		<Unit filename="/Users/liqi/Desktop/Http_Server_Client/httpserver/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>
