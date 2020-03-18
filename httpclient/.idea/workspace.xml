@@ -12,46 +12,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f0c7a82b-9158-4c5a-941f-dc6505eff1ef" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/httpclient.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/httpclient.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/httpclient.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/httpclient.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/httpclient.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/httpclient.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/httpclient.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/httpclient.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/httpclient.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/httpclient.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/httpclient.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/httpclient" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/httpclient" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpserver/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/TargetDirectories.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/connection.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/connection_manager.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/depend.internal" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/main.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/mime_types.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/reply.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/request_handler.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/request_parser.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/CMakeFiles/httpserver.dir/server.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/cmake_install.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/cmake_install.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/httpserver.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/httpserver.cbp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../httpserver/cmake-build-debug/httpserver" beforeDir="false" afterPath="$PROJECT_DIR$/../httpserver/cmake-build-debug/httpserver" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -78,8 +45,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1400">
-              <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+            <state relative-caret-position="165">
+              <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
             </state>
           </provider>
         </entry>
@@ -98,10 +65,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="191" />
+    <option name="x" value="146" />
     <option name="y" value="23" />
     <option name="width" value="1400" />
-    <option name="height" value="948" />
+    <option name="height" value="945" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -109,7 +76,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -121,6 +87,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -162,28 +129,29 @@
       <updated>1584348366466</updated>
       <workItem from="1584348367769" duration="1817000" />
       <workItem from="1584352239890" duration="255000" />
+      <workItem from="1584435238049" duration="1037000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="2072000" />
+    <option name="totallyTimeSpent" value="3109000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="191" y="23" width="1400" height="948" extended-state="0" />
+    <frame x="146" y="23" width="1400" height="945" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2533137" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2569956" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3145258" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.31445783" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Database Changes" order="7" />
-      <window_info anchor="bottom" id="Messages" order="8" weight="0.32893157" />
+      <window_info anchor="bottom" id="Messages" order="8" weight="0.32891566" />
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="11" />
@@ -207,8 +175,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1400">
-          <caret line="106" column="19" selection-start-line="106" selection-start-column="19" selection-end-line="106" selection-end-column="19" />
+        <state relative-caret-position="165">
+          <caret line="15" column="32" lean-forward="true" selection-start-line="15" selection-start-column="32" selection-end-line="15" selection-end-column="32" />
         </state>
       </provider>
     </entry>

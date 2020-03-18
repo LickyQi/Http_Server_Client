@@ -7,7 +7,7 @@
 using boost::asio::ip::tcp;
 using std::string;
 
-int post(const string& host, const string& port, string& reponse_data)
+int post(const string& host, const string& port,const string& page, string& reponse_data)
 {
     try
     {
@@ -30,11 +30,11 @@ int post(const string& host, const string& port, string& reponse_data)
         // allow us to treat all data up until the EOF as the content.
         boost::asio::streambuf request;
         std::ostream request_stream(&request);
-        request_stream << "POST " << "/" << " HTTP/1.0\r\n";
+        request_stream << "POST " << page << " HTTP/1.0\r\n";
         request_stream << "Host: " << host << ":" << port << "\r\n";
         request_stream << "Accept: */*\r\n";
         //request_stream << "Content-Length: " << data.length() << "\r\n";
-        request_stream << "Content-Type: text/html\r\n";
+        request_stream << "Content-Type: application/json\r\n";
         request_stream << "Connection: close\r\n\r\n";
 
         // Send the request.
@@ -104,10 +104,11 @@ int post(const string& host, const string& port, string& reponse_data)
 int main(int argc, char* argv[])
 {
     string host = "127.0.0.1";
-    string port = "80";
+    string port = "1080";
     string reponse_data;
+    string page = "/example.json";
 
-    int ret = post(host, port, reponse_data);
+    int ret = post(host,port,page,reponse_data);
     if (ret != 0)
         std::cout << "error_code:" << ret << std::endl;
 
