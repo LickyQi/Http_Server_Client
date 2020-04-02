@@ -1,0 +1,22 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/liqi/Desktop/webClient/main.cpp
+iostream
+-
+send_res_client.h
+/Users/liqi/Desktop/webClient/send_res_client.h
+thread
+-
+
+/Users/liqi/Desktop/webClient/send_res_client.h
+string
+-
+iostream
+-
+
