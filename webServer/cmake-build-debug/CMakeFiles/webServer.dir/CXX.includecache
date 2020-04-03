@@ -36,10 +36,6 @@ thread
 fstream
 -
 
-/Users/liqi/Desktop/webServer/main.cpp
-http_server.h
-/Users/liqi/Desktop/webServer/http_server.h
-
 /Users/liqi/Desktop/webServer/memory_pool.h
 cstdint
 -

@@ -24,7 +24,7 @@ struct CropImg {
     // 边框w
     uint32_t c_w;
     // 置信度
-    uint32_t c_threshold;
+    double c_threshold;
     // 抠图base64编码数据
     std::string img_data;
 };
@@ -58,15 +58,15 @@ struct DecodedJsonObj {
 功    能：
 	读取接收并解析出的DecodedJsonObj的接口。
 函数声明：
-	int ReadDecodedJsonObj(DecodedJsonObj *obj);
+	DecodedJsonObj* ReadDecodedJsonObj();
 运行方式：
 	阻塞式运行，需支持多线程调用，保证线程安全。
 参    数：
 	obj 读取到的DecodedJsonObj对象的地址
 返回值：
-	读取成功时，返回 0；否则异常返回 -1。
+	读取成功时，返回 obj；否则异常返回 NULL。
 */
-int ReadDecodedJsonObj(DecodedJsonObj *obj);
+DecodedJsonObj* ReadDecodedJsonObj();
 
 /*
 功    能：
