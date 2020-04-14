@@ -5,8 +5,9 @@
 #include "base64.h"
 #include "memory_pool.h"
 #include <boost/asio.hpp>
-#include "json/json.h"
 #include <queue>
+#include "rapidjson/document.h"
+#include "rapidjson/stringbuffer.h"
 
 using namespace std;
 using boost::asio::ip::tcp;
@@ -53,65 +54,65 @@ DecodedJsonObj* ReadDecodedJsonObj(){
     strcpy(data,data_str.c_str());
 
     //读取JSON串
-    Json::Reader reader;
-    Json::Value read_value;
+    rapidjson::Document read_value;
+    read_value.Parse(data);
 
-    if (reader.parse(data,read_value)) { //reader将Json字符串解析到read_value
+    if (!read_value.HasParseError()) { //reader将Json字符串解析到read_value
 
-        jsonObj->version = read_value["version"].asUInt();
-        jsonObj->ai_ip = read_value["ai_ip"].asString();
-        jsonObj->ai_mac = read_value["ai_mac"].asString();
-        jsonObj->camera_id = read_value["camera_id"].asString();
-        jsonObj->channel_id = read_value["channel_id"].asString();
-        jsonObj->unix_time = read_value["unix_time"].asUInt();
+        jsonObj->version = read_value["version"].GetUint();
+        jsonObj->ai_ip = read_value["ai_ip"].GetString();
+        jsonObj->ai_mac = read_value["ai_mac"].GetString();
+        jsonObj->camera_id = read_value["camera_id"].GetString();
+        jsonObj->channel_id = read_value["channel_id"].GetString();
+        jsonObj->unix_time = read_value["unix_time"].GetUint();
 
-        char *image_encode = &read_value["total_img"].asString()[0];
-        /** Base64解码 */
-        unsigned int decode_col = 0;
-        //获取解码长度
-        decode_col = BASE64_DECODE_OUT_SIZE(read_value["total_img"].asString().size())-2;
-        //申请内存，动态创建数组
-        unsigned char * image_decode = new unsigned char[decode_col];
-        base64_decode(image_encode,read_value["total_img"].asString().size(),image_decode);
-
-        vector<unsigned char> str;
-        for(int i=0;i<decode_col;i++)
-            str.push_back(image_decode[i]);
-
-        jsonObj->total_img.resize(str.size());
-        memcpy(&jsonObj->total_img[0], str.data(), str.size());
-
-        delete []image_decode;
+        jsonObj->total_img = read_value["total_img"].GetString();
+//        char *image_encode = &jsonObj->total_img[0];
+//        /** Base64解码 */
+//        unsigned int decode_col = 0;
+//        //获取解码长度
+//        decode_col = BASE64_DECODE_OUT_SIZE(jsonObj->total_img.size())-2;
+//        //申请内存，动态创建数组
+//        unsigned char * image_decode = new unsigned char[decode_col];
+//        base64_decode(image_encode,jsonObj->total_img.size(),image_decode);
+//
+//        vector<unsigned char> str;
+//        for(int i=0;i<decode_col;i++)
+//            str.push_back(image_decode[i]);
+//
+//        jsonObj->total_img.resize(str.size());
+//        memcpy(&jsonObj->total_img[0], str.data(), str.size());
+//
+//        delete []image_decode;
 
         /** 解码完成，释放内存 */
 
-        jsonObj->crop_img_num = read_value["datas"].size();
+        jsonObj->crop_img_num = read_value["datas"].Size();
+        jsonObj->crop_imgs = new CropImg[read_value["datas"].Size()];
 
-        jsonObj->crop_imgs = new CropImg[read_value["datas"].size()];
+        for (rapidjson::SizeType i = 0; i < read_value["datas"].Size(); i++) {
+            jsonObj->crop_imgs[i].type = read_value["datas"][i]["type"].GetUint();
+            jsonObj->crop_imgs[i].c_x =  read_value["datas"][i]["c_x"].GetUint();
+            jsonObj->crop_imgs[i].c_y=  read_value["datas"][i]["c_y"].GetUint();
+            jsonObj->crop_imgs[i].c_h =  read_value["datas"][i]["c_h"].GetUint();
+            jsonObj->crop_imgs[i].c_w =  read_value["datas"][i]["c_w"].GetUint();
+            jsonObj->crop_imgs[i].c_threshold =  read_value["datas"][i]["c_threshold"].GetDouble();
 
-        for (int i = 0; i < read_value["datas"].size(); i++) {
-            jsonObj->crop_imgs[i].type = read_value["datas"][i]["type"].asInt();
-            jsonObj->crop_imgs[i].c_x =  read_value["datas"][i]["c_x"].asInt();
-            jsonObj->crop_imgs[i].c_y=  read_value["datas"][i]["c_y"].asInt();
-            jsonObj->crop_imgs[i].c_h =  read_value["datas"][i]["c_h"].asInt();
-            jsonObj->crop_imgs[i].c_w =  read_value["datas"][i]["c_w"].asInt();
-            jsonObj->crop_imgs[i].c_threshold =  read_value["datas"][i]["c_threshold"].asDouble();
-            jsonObj->crop_imgs[i].img_data =  read_value["datas"][i]["crop_img"].asString();
-
-            /** Base64解码 */
-            //获取解码长度
-            decode_col = BASE64_DECODE_OUT_SIZE(read_value["datas"][i]["crop_img"].asString().size())-2;
-            //申请内存，动态创建数组
-            image_decode = new unsigned char[decode_col];
-            base64_decode(image_encode,read_value["datas"][i]["crop_img"].asString().size(),image_decode);
-
-            for(int i=0;i<decode_col;i++)
-                str.push_back(image_decode[i]);
-
-            jsonObj->crop_imgs[i].img_data.resize(str.size());
-            memcpy(&jsonObj->crop_imgs[i].img_data[0], str.data(), str.size());
-
-            delete []image_decode;
+            jsonObj->crop_imgs[i].img_data =  read_value["datas"][i]["crop_img"].GetString();
+//            /** Base64解码 */
+//            //获取解码长度
+//            decode_col = BASE64_DECODE_OUT_SIZE(jsonObj->crop_imgs[i].img_data.size())-2;
+//            //申请内存，动态创建数组
+//            image_decode = new unsigned char[decode_col];
+//            base64_decode(image_encode,jsonObj->crop_imgs[i].img_data.size(),image_decode);
+//
+//            for(int i=0;i<decode_col;i++)
+//                str.push_back(image_decode[i]);
+//
+//            jsonObj->crop_imgs[i].img_data.resize(str.size());
+//            memcpy(&jsonObj->crop_imgs[i].img_data[0], str.data(), str.size());
+//
+//            delete []image_decode;
             /** 解码完成，释放内存 */
 
         }
@@ -164,25 +165,21 @@ int DataListening(char *port,char* url){
             // Check that response is OK.
             std::istream listening_stream(&listening);
 
-//            string str;
-//            while (std::getline(listening_stream, str)) {
-//                std::cout << str << std::endl;
-//            }
+            string str;
+            while (std::getline(listening_stream, str)) {
+                std::cout << str << std::endl;
+            }
 
             std::string http_version, page, http_method;
             listening_stream >> http_method >> page >> http_method;
 
             if (!listening_stream || page != "/anasys/facerecognizeservice") {
                 cout << "Invalid listening" << endl;
-                std::unique_lock<std::mutex> list_lock(mt_data);
-                errorcode = -1;
-                list_lock.unlock();
-                return -1;
+                continue;
             }
             // 包头
             std::string header;
             while (std::getline(listening_stream, header) && header != "{\r"){
-
             }
 
             // 读取所有剩下的数据作为body

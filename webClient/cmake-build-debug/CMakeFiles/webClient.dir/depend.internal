@@ -5,6 +5,23 @@ CMakeFiles/webClient.dir/main.cpp.o
  /Users/liqi/Desktop/webClient/main.cpp
  /Users/liqi/Desktop/webClient/send_res_client.h
 CMakeFiles/webClient.dir/send_res_client.cpp.o
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/allocators.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/encodings.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/clzll.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/diyfp.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/dtoa.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/ieee754.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/itoa.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/meta.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/stack.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/strfunc.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/swap.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/msinttypes/inttypes.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/msinttypes/stdint.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/rapidjson.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/stream.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/stringbuffer.h
+ /Users/liqi/Desktop/rapidjson-master/include/rapidjson/writer.h
  /Users/liqi/Desktop/webClient/send_res_client.cpp
  /Users/liqi/Desktop/webClient/send_res_client.h
  /usr/local/include/boost/array.hpp
@@ -1189,11 +1206,3 @@ CMakeFiles/webClient.dir/send_res_client.cpp.o
  /usr/local/include/boost/winapi/local_memory.hpp
  /usr/local/include/boost/winapi/time.hpp
  /usr/local/include/boost/winapi/timers.hpp
- /usr/local/include/json/autolink.h
- /usr/local/include/json/config.h
- /usr/local/include/json/features.h
- /usr/local/include/json/forwards.h
- /usr/local/include/json/json.h
- /usr/local/include/json/reader.h
- /usr/local/include/json/value.h
- /usr/local/include/json/writer.h

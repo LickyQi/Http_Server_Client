@@ -7,11 +7,11 @@ C_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacO
 
 C_DEFINES = 
 
-C_INCLUDES = -I/usr/local/include 
+C_INCLUDES = -I/usr/local/include -I/Users/liqi/Desktop/rapidjson-master/include 
 
 CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk   -std=gnu++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include 
+CXX_INCLUDES = -I/usr/local/include -I/Users/liqi/Desktop/rapidjson-master/include 
 

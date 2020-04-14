@@ -4,6 +4,28 @@
 CMakeFiles/webServer.dir/base64.c.o: ../base64.c
 CMakeFiles/webServer.dir/base64.c.o: ../base64.h
 
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/allocators.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/document.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/encodedstream.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/encodings.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/error/error.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/biginteger.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/clzll.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/diyfp.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/ieee754.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/meta.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/pow10.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/stack.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/strfunc.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/strtod.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/swap.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/memorystream.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/msinttypes/inttypes.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/msinttypes/stdint.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/rapidjson.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/reader.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/stream.h
+CMakeFiles/webServer.dir/http_server.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/stringbuffer.h
 CMakeFiles/webServer.dir/http_server.cpp.o: ../base64.h
 CMakeFiles/webServer.dir/http_server.cpp.o: ../http_server.cpp
 CMakeFiles/webServer.dir/http_server.cpp.o: ../http_server.h
@@ -1190,14 +1212,6 @@ CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/boost/winapi/get_
 CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/boost/winapi/local_memory.hpp
 CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/boost/winapi/time.hpp
 CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/boost/winapi/timers.hpp
-CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/json/autolink.h
-CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/json/config.h
-CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/json/features.h
-CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/json/forwards.h
-CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/json/json.h
-CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/json/reader.h
-CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/json/value.h
-CMakeFiles/webServer.dir/http_server.cpp.o: /usr/local/include/json/writer.h
 
 CMakeFiles/webServer.dir/main.cpp.o: ../http_server.h
 CMakeFiles/webServer.dir/main.cpp.o: ../main.cpp

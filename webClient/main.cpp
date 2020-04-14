@@ -4,9 +4,9 @@
 
 int main(int argc, char* argv[])
 {
-    char *host = "172.16.3.101";
-    //char *host = "127.0.0.1";
-    char *port = "1080";
+    //char *host = "172.16.3.101/local";
+    char *host = "127.0.0.1/anasys/facerecognizeservice";
+    char *port = "9877";
 
     string cameraid = "abcdef110212";
     string c_x = "1160";
@@ -21,24 +21,24 @@ int main(int argc, char* argv[])
     string stranger = "0";
     string faceid = "45";
     string timestap = "1149";
-    string datetime = "20200117_09_54_22";
+    int datetime = 1579226062;
     string plate_id = "京A:88771";
 
     int client_face = InitFaceClient(host,port);
-    int client_plate = InitPlateClient(host,port);
+    //int client_plate = InitPlateClient(host,port);
 
     std::thread t1(SendFaceRes, cameraid, c_x, c_y,  c_h,
                    c_w, c_age,c_gender,c_threshold,
                    totalimgbase64, imgbase64,  stranger,  faceid,
                    timestap, datetime);
 
-    std::thread t2(SendPlateRes,cameraid,c_x, c_y, c_h,
-                              c_w, c_threshold,totalimgbase64,
-                             imgbase64, plate_id);
+//    std::thread t2(SendPlateRes,cameraid,c_x, c_y, c_h,
+//                              c_w, c_threshold,totalimgbase64,
+//                             imgbase64, plate_id);
     t1.join();
-    t2.join();
+    //t2.join();
 
     ReleaseFaceClient();
-    ReleasePlateClient();
+    //ReleasePlateClient();
     return 0;
 }

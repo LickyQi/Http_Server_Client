@@ -26,13 +26,13 @@ void decode_json(){
 int main() {
 
     char * port = "9877";
-    char * url= "127.0.0.1";
+    char * url= "192.17.1.21";
 
     if(StartServer(port,url)!=0)
         return 0;
 
     std::thread t1(decode_json);
-    StopServer(port,url);
+    //StopServer(port,url);
 
     t1.join();
 

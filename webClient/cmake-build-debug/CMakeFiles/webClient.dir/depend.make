@@ -4,6 +4,23 @@
 CMakeFiles/webClient.dir/main.cpp.o: ../main.cpp
 CMakeFiles/webClient.dir/main.cpp.o: ../send_res_client.h
 
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/allocators.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/encodings.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/clzll.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/diyfp.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/dtoa.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/ieee754.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/itoa.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/meta.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/stack.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/strfunc.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/internal/swap.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/msinttypes/inttypes.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/msinttypes/stdint.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/rapidjson.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/stream.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/stringbuffer.h
+CMakeFiles/webClient.dir/send_res_client.cpp.o: /Users/liqi/Desktop/rapidjson-master/include/rapidjson/writer.h
 CMakeFiles/webClient.dir/send_res_client.cpp.o: ../send_res_client.cpp
 CMakeFiles/webClient.dir/send_res_client.cpp.o: ../send_res_client.h
 CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/boost/array.hpp
@@ -1188,12 +1205,4 @@ CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/boost/winapi/
 CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/boost/winapi/local_memory.hpp
 CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/boost/winapi/time.hpp
 CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/boost/winapi/timers.hpp
-CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/json/autolink.h
-CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/json/config.h
-CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/json/features.h
-CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/json/forwards.h
-CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/json/json.h
-CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/json/reader.h
-CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/json/value.h
-CMakeFiles/webClient.dir/send_res_client.cpp.o: /usr/local/include/json/writer.h
 

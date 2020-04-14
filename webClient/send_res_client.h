@@ -10,6 +10,9 @@
 
 using namespace std;
 
+//时间戳转换
+string stamp_to_standard(int stampTime);
+
 /*
 功    能：
 	初始化人脸识别结果上传模块。
@@ -72,7 +75,7 @@ int ReleaseFaceClient();
 int SendFaceRes(string cameraid, string c_x, string c_y, string c_h,
                 string c_w, string c_age, string c_gender, string c_threshold,
                 string totalimgbase64, string imgbase64, string stranger, string faceid,
-                string timestap, string datetime);
+                string timestap, int datetime);
 
 /*
 功    能：

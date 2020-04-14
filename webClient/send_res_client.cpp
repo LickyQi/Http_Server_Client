@@ -3,28 +3,49 @@
 //
 
 #include "send_res_client.h"
-#include "json/json.h"
 #include <boost/asio.hpp>
+#include "rapidjson/writer.h"
+#include "rapidjson/stringbuffer.h"
 
 using boost::asio::ip::tcp;
 
 boost::asio::io_service io_service_face;
 tcp::resolver::iterator endpoint_iterator_face;
 
-char* host_face;
-char* port_face;
+string host_face;
+string port_face;
+string sub_host_face;
 
 boost::asio::io_service io_service_plate;
 tcp::resolver::iterator endpoint_iterator_plate;
 
-char* host_plate;
-char* port_plate;
+string host_plate;
+string port_plate;
+string sub_host_plate;
 
 std::mutex mt;
+
+string stamp_to_standard(int stampTime)
+{
+    time_t tick = (time_t)stampTime;
+    struct tm tm;
+    char s[20];
+    tm = *localtime(&tick);
+    strftime(s, sizeof(s), "%Y%m%d_%H_%M_%S", &tm);
+    return s;
+}
 
 int InitFaceClient(char* url, char* port){
 
     std::lock_guard<std::mutex> lk(mt);
+
+    string s(url);
+    int pos = s.find_first_of('/');
+    string ip = s.substr(0,pos);
+    if(pos == -1)
+        sub_host_face = "";
+    else
+        sub_host_face = s.substr(pos);
 
     try
     {
@@ -34,9 +55,9 @@ int InitFaceClient(char* url, char* port){
 
         // 从dns取得域名下的所有ip
         tcp::resolver resolver(io_service_face);
-        tcp::resolver::query query(url, port);
+        tcp::resolver::query query(ip, port);
         endpoint_iterator_face = resolver.resolve(query);
-        host_face = url;
+        host_face = ip;
         port_face = port;
     }
     catch(std::exception& e)
@@ -66,7 +87,7 @@ int ReleaseFaceClient(){
 int SendFaceRes(string cameraid, string c_x, string c_y, string c_h,
                 string c_w, string c_age, string c_gender, string c_threshold,
                 string totalimgbase64, string imgbase64, string stranger, string faceid,
-                string timestap, string datetime){
+                string timestap, int datetime){
 
     std::lock_guard<std::mutex> lk(mt);
 
@@ -76,36 +97,83 @@ int SendFaceRes(string cameraid, string c_x, string c_y, string c_h,
         boost::asio::connect(socket, endpoint_iterator_face);
 
         //构建JSON串
-        Json::Value data_value;
 
-        data_value["cameraid"] = cameraid;
-        data_value["c_x"] = c_x;
-        data_value["c_y"] = c_y;
-        data_value["c_h"] = c_h;
-        data_value["c_w"] = c_w;
-        data_value["c_age"] = c_age;
-        data_value["c_gender"] = c_gender;
-        data_value["c_threshold"] = c_threshold;
-        data_value["totalimgbase64"] = totalimgbase64;
-        data_value["imgbase64"] = imgbase64;
-        data_value["stranger"] = stranger;
-        data_value["faceid"] = faceid;
-        data_value["timestap"] = timestap;
-        data_value["datetime"] = datetime;
+        rapidjson::StringBuffer data_value;
+        rapidjson::Writer<rapidjson::StringBuffer> writer(data_value);
+
+        writer.StartObject();
+
+        writer.Key("cameraid");
+        const char * temp = cameraid.c_str();
+        writer.String(temp);
+
+        writer.Key("c_x");
+        temp = c_x.c_str();
+        writer.String(temp);
+
+        writer.Key("c_y");
+        temp = c_y.c_str();
+        writer.String(temp);
+
+        writer.Key("c_h");
+        temp = c_h.c_str();
+        writer.String(temp);
+
+        writer.Key("c_w");
+        temp = c_w.c_str();
+        writer.String(temp);
+
+        writer.Key("c_age");
+        temp = c_age.c_str();
+        writer.String(temp);
+
+        writer.Key("c_gender");
+        temp = c_gender.c_str();
+        writer.String(temp);
+
+        writer.Key("c_threshold");
+        temp = c_threshold.c_str();
+        writer.String(temp);
+
+        writer.Key("totalimgbase64");
+        temp = totalimgbase64.c_str();
+        writer.String(temp);
+
+        writer.Key("imgbase64");
+        temp = imgbase64.c_str();
+        writer.String(temp);
+
+        writer.Key("stranger");
+        temp = stranger.c_str();
+        writer.String(temp);
+
+        writer.Key("faceid");
+        temp = faceid.c_str();
+        writer.String(temp);
+
+        writer.Key("timestap");
+        temp = timestap.c_str();
+        writer.String(temp);
+
+        writer.Key("datetime");
+        temp = stamp_to_standard(datetime).c_str();
+        writer.String(temp);
+
+        writer.EndObject();
 
         //格式转换
-        string str_json = data_value.toStyledString();
+        string str_json = data_value.GetString();
 
         // Form the request.
         boost::asio::streambuf request;
         std::ostream request_stream(&request);
-        request_stream << "POST "<< " HTTP/1.0\r\n";
+        request_stream << "POST "<< sub_host_face <<" HTTP/1.0\r\n";
         request_stream << "Host: " << host_face << ":" << port_face << "\r\n";
         request_stream << "Accept: */*\r\n";
         request_stream << "Content-Length: " << str_json.length() << "\r\n";
-        request_stream << "Data: " << data_value << "\r\n";
         request_stream << "Content-Type: application/json\r\n";
-        request_stream << "Connection: close\r\n\r\n";
+        request_stream << "Connection: close\r\n";
+        request_stream << str_json << "\r\n\r\n";
 
         // Send the request.
         boost::asio::write(socket, request);
@@ -173,10 +241,17 @@ int SendFaceRes(string cameraid, string c_x, string c_y, string c_h,
     }
 }
 
-
 int InitPlateClient(char* url, char* port){
 
     std::lock_guard<std::mutex> lk(mt);
+
+    string s(url);
+    int pos = s.find_first_of('/');
+    string ip = s.substr(0,pos);
+    if(pos == -1)
+        sub_host_face = "";
+    else
+        sub_host_face = s.substr(pos);
 
     try
     {
@@ -186,9 +261,9 @@ int InitPlateClient(char* url, char* port){
 
         // 从dns取得域名下的所有ip
         tcp::resolver resolver(io_service_plate);
-        tcp::resolver::query query(url, port);
+        tcp::resolver::query query(ip, port);
         endpoint_iterator_plate = resolver.resolve(query);
-        host_plate = url;
+        host_plate = ip;
         port_plate = port;
     }
     catch(std::exception& e)
@@ -225,32 +300,62 @@ int SendPlateRes(string cameraid, string c_x, string c_y, string c_h,
         tcp::socket socket(io_service_plate);
         boost::asio::connect(socket, endpoint_iterator_plate);
 
-        //构建JSON串
-        Json::Value data_value;
+        rapidjson::StringBuffer data_value;
+        rapidjson::Writer<rapidjson::StringBuffer> writer(data_value);
 
-        data_value["cameraid"] = cameraid;
-        data_value["c_x"] = c_x;
-        data_value["c_y"] = c_y;
-        data_value["c_h"] = c_h;
-        data_value["c_w"] = c_w;
-        data_value["c_threshold"] = c_threshold;
-        data_value["totalimgbase64"] = totalimgbase64;
-        data_value["imgbase64"] = imgbase64;
-        data_value["plate_id"] = plate_id;
+        writer.StartObject();
+
+        writer.Key("cameraid");
+        const char * temp = cameraid.c_str();
+        writer.String(temp);
+
+        writer.Key("c_x");
+        temp = c_x.c_str();
+        writer.String(temp);
+
+        writer.Key("c_y");
+        temp = c_y.c_str();
+        writer.String(temp);
+
+        writer.Key("c_h");
+        temp = c_h.c_str();
+        writer.String(temp);
+
+        writer.Key("c_w");
+        temp = c_w.c_str();
+        writer.String(temp);
+
+        writer.Key("c_threshold");
+        temp = c_threshold.c_str();
+        writer.String(temp);
+
+        writer.Key("totalimgbase64");
+        temp = totalimgbase64.c_str();
+        writer.String(temp);
+
+        writer.Key("imgbase64");
+        temp = imgbase64.c_str();
+        writer.String(temp);
+
+        writer.Key("plate_id");
+        temp = plate_id.c_str();
+        writer.String(temp);
+
+        writer.EndObject();
 
         //格式转换
-        string str_json = data_value.toStyledString();
+        string str_json = data_value.GetString();
 
         // Form the request.
         boost::asio::streambuf request;
         std::ostream request_stream(&request);
-        request_stream << "POST " << "" << " HTTP/1.0\r\n";
+        request_stream << "POST " << sub_host_plate << " HTTP/1.0\r\n";
         request_stream << "Host: " << host_plate << ":" << port_plate << "\r\n";
         request_stream << "Accept: */*\r\n";
         request_stream << "Content-Length: " << str_json.length() << "\r\n";
-        request_stream << "Data: " << data_value << "\r\n";
         request_stream << "Content-Type: application/json\r\n";
-        request_stream << "Connection: close\r\n\r\n";
+        request_stream << "Connection: close\r\n";
+        request_stream << str_json << "\r\n\r\n";
 
         // Send the request.
         boost::asio::write(socket, request);

@@ -6,5 +6,5 @@ CXX_FLAGS = -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/Ma
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/usr/local/include 
+CXX_INCLUDES = -I/usr/local/include -I/Users/liqi/Desktop/rapidjson-master/include 
 
