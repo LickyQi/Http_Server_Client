@@ -1,0 +1,3 @@
+/Users/liqi/Desktop/wenServer_with_AVX/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/liqi/Desktop/wenServer_with_AVX/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/liqi/Desktop/wenServer_with_AVX/cmake-build-debug/CMakeFiles/wenServer_with_AVX.dir
